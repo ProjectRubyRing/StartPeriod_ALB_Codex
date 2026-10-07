@@ -1,0 +1,26 @@
+[
+  {
+    "id": "S25",
+    "method": "GET",
+    "status": 200,
+    "url": "https://docs.redhat.com/ja/documentation/red_hat_jboss_enterprise_application_platform/8.1/html/configuration_guide/assembly-about-socket-bindings_default"
+  },
+  {
+    "id": "S26",
+    "method": "GET",
+    "status": 200,
+    "url": "https://docs.redhat.com/en/documentation/red_hat_jboss_enterprise_application_platform/8.1/html-single/using_jboss_eap_xp_6.0/using_jboss_eap_xp_6.0"
+  },
+  {
+    "id": "S27",
+    "method": "GET",
+    "status": 200,
+    "url": "https://docs.redhat.com/en/documentation/red_hat_jboss_enterprise_application_platform/8.1/html/using_jboss_eap_on_openshift_container_platform/assembly_reference-information-for-openshift-container-platform_default"
+  },
+  {
+    "id": "S28",
+    "method": "GET",
+    "status": 200,
+    "url": "https://docs.redhat.com/en/documentation/red_hat_jboss_enterprise_application_platform/8.1/html/release_notes_for_red_hat_jboss_enterprise_application_platform_8.1/supported-configurations-rn_assembly-release-notes"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "xlsx_zip_integrity": "passed",
+  "sheet_count": 21,
+  "filled_cells": 2372,
+  "all_text_font": "Meiryo UI",
+  "monochrome_colors": [
+    "111111",
+    "202020",
+    "222222",
+    "242424",
+    "333333",
+    "363636",
+    "555555",
+    "E3E3E3",
+    "E6E6E6",
+    "F1F1F1",
+    "F2F2F2",
+    "FFFFFF"
+  ],
+  "formula_count": 14,
+  "formula_checks": "14 cached results + 8 scenarios + 4 boundary cases passed",
+  "scenario_results": [
+    {
+      "pattern": "P0",
+      "result": "仮定上は猶予内",
+      "need": 282
+    },
+    {
+      "pattern": "P1",
+      "result": "仮定上は猶予内",
+      "need": 117
+    },
+    {
+      "pattern": "P2",
+      "result": "仮定上は猶予内",
+      "need": 282
+    },
+    {
+      "pattern": "P3",
+      "result": "依存構成の見直し",
+      "need": null
+    },
+    {
+      "pattern": "P4",
+      "result": "仮定上は猶予内",
+      "need": 282
+    },
+    {
+      "pattern": "P5",
+      "result": "仮定上は猶予内",
+      "need": 282
+    },
+    {
+      "pattern": "P6",
+      "result": "仮定上は猶予内",
+      "need": 402
+    },
+    {
+      "pattern": "P7",
+      "result": "仮定上は猶予内",
+      "need": 437
+    }
+  ],
+  "input_validation_count": 16,
+  "json_template_count": 9,
+  "markdown_json_blocks": 7,
+  "source_count": 39,
+  "markdown_characters": 78036,
+  "preview_count": 6,
+  "native_excel_render": "not available: COM server startup failed; local cell-layout previews used",
+  "aws_execution": "not performed; no AWS changes",
+  "terraform_validate_plan": "not performed: illustrative fragments lack deployment-specific provider/variables/resources",
+  "probe_binary_build": "not performed: Go toolchain and target image not supplied"
+}

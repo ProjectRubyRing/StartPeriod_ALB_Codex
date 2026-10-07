@@ -1,0 +1,91 @@
+[
+  {
+    "name": "adot",
+    "image": "REPLACE_WITH_ADOT_IMAGE_DIGEST",
+    "essential": true,
+    "stopTimeout": 60,
+    "healthCheck": {
+      "command": [
+        "CMD",
+        "/healthcheck"
+      ],
+      "interval": 5,
+      "timeout": 2,
+      "retries": 3,
+      "startPeriod": 30
+    },
+    "startTimeout": 120,
+    "command": [
+      "--config=/etc/ecs/otel-config.yaml"
+    ]
+  },
+  {
+    "name": "backend",
+    "image": "REPLACE_WITH_BACKEND_UBI_EAP_IMAGE_DIGEST",
+    "essential": true,
+    "stopTimeout": 60,
+    "healthCheck": {
+      "command": [
+        "CMD-SHELL",
+        "code=$(curl --noproxy '*' --silent --show-error --output /dev/null --write-out '%{http_code}' --connect-timeout 1 --max-time 3 http://127.0.0.1:8180/app/health/ready) && [ \"$code\" = \"200\" ]"
+      ],
+      "interval": 10,
+      "timeout": 5,
+      "retries": 3,
+      "startPeriod": 100
+    },
+    "startTimeout": 120,
+    "dependsOn": [
+      {
+        "containerName": "adot",
+        "condition": "HEALTHY"
+      }
+    ]
+  },
+  {
+    "name": "frontend",
+    "image": "REPLACE_WITH_FRONTEND_UBI_EAP_IMAGE_DIGEST",
+    "essential": true,
+    "stopTimeout": 60,
+    "healthCheck": {
+      "command": [
+        "CMD-SHELL",
+        "code=$(curl --noproxy '*' --silent --show-error --output /dev/null --write-out '%{http_code}' --connect-timeout 1 --max-time 3 http://127.0.0.1:8080/app/health/ready-local) && [ \"$code\" = \"200\" ]"
+      ],
+      "interval": 10,
+      "timeout": 5,
+      "retries": 3,
+      "startPeriod": 210
+    },
+    "dependsOn": [
+      {
+        "containerName": "backend",
+        "condition": "HEALTHY"
+      }
+    ],
+    "portMappings": [
+      {
+        "name": "frontend-http",
+        "containerPort": 8080,
+        "protocol": "tcp"
+      }
+    ]
+  },
+  {
+    "name": "cwagent",
+    "image": "REPLACE_WITH_CWAGENT_IMAGE_WITH_PROC_HEALTHCHECK",
+    "essential": false,
+    "stopTimeout": 30,
+    "healthCheck": {
+      "command": [
+        "CMD",
+        "/usr/local/bin/proc-healthcheck",
+        "/opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent"
+      ],
+      "interval": 30,
+      "timeout": 5,
+      "retries": 3,
+      "startPeriod": 30
+    }
+  }
+]

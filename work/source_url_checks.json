@@ -1,0 +1,193 @@
+[
+  {
+    "id": "S01",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_HealthCheck.html"
+  },
+  {
+    "id": "S02",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/healthcheck.html"
+  },
+  {
+    "id": "S03",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html"
+  },
+  {
+    "id": "S04",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDependency.html"
+  },
+  {
+    "id": "S05",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html"
+  },
+  {
+    "id": "S06",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Task.html"
+  },
+  {
+    "id": "S07",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-lifecycle-explanation.html"
+  },
+  {
+    "id": "S08",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html"
+  },
+  {
+    "id": "S09",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-healthcheck.html"
+  },
+  {
+    "id": "S10",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateTargetGroup.html"
+  },
+  {
+    "id": "S11",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-target-group-attributes.html"
+  },
+  {
+    "id": "S12",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html"
+  },
+  {
+    "id": "S13",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-task-networking.html"
+  },
+  {
+    "id": "S14",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-response.html"
+  },
+  {
+    "id": "S15",
+    "status": 200,
+    "url": "https://github.com/aws-observability/aws-otel-collector/blob/main/cmd/awscollector/Dockerfile"
+  },
+  {
+    "id": "S16",
+    "status": 200,
+    "url": "https://github.com/aws-observability/aws-otel-collector/blob/main/cmd/healthcheck/main.go"
+  },
+  {
+    "id": "S17",
+    "status": 200,
+    "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/extension/healthcheckextension/README.md"
+  },
+  {
+    "id": "S18",
+    "status": 200,
+    "url": "https://opentelemetry.io/docs/collector/resiliency/"
+  },
+  {
+    "id": "S19",
+    "status": 200,
+    "url": "https://github.com/aws/amazon-cloudwatch-agent/blob/main/amazon-cloudwatch-container-insights/cloudwatch-agent-dockerfile/Dockerfile"
+  },
+  {
+    "id": "S20",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-ECS-Sidecar.html"
+  },
+  {
+    "id": "S21",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-restart-policy.html"
+  },
+  {
+    "id": "S22",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerRestartPolicy.html"
+  },
+  {
+    "id": "S23",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html"
+  },
+  {
+    "id": "S24",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_definition_parameters.html"
+  },
+  {
+    "id": "S25",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "S26",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "S27",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "S28",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "S29",
+    "status": 200,
+    "url": "https://aws.amazon.com/jp/about-aws/whats-new/2017/12/amazon-ecs-adds-elb-health-check-grace-period/"
+  },
+  {
+    "id": "S30",
+    "status": 200,
+    "url": "https://aws.amazon.com/pt/about-aws/whats-new/2018/03/amazon-ecs-supports-container-health-checks-and-task-health-mana/"
+  },
+  {
+    "id": "S31",
+    "status": 200,
+    "url": "https://aws.amazon.com/about-aws/whats-new/2018/03/aws-fargate-platform-version-1-1/"
+  },
+  {
+    "id": "S32",
+    "status": 200,
+    "url": "https://aws.amazon.com/about-aws/whats-new/2019/03/amazon-ecs-introduces-enhanced-container-dependency-management/"
+  },
+  {
+    "id": "S33",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/document_history.html"
+  },
+  {
+    "id": "S34",
+    "status": 200,
+    "url": "https://docs.docker.com/reference/dockerfile/#healthcheck"
+  },
+  {
+    "id": "S35",
+    "status": 200,
+    "url": "https://github.com/hashicorp/terraform-provider-aws/blob/main/website/docs/r/ecs_service.html.markdown"
+  },
+  {
+    "id": "S36",
+    "status": 200,
+    "url": "https://github.com/hashicorp/terraform-provider-aws/blob/main/website/docs/r/lb_target_group.html.markdown"
+  },
+  {
+    "id": "S37",
+    "status": 200,
+    "url": "https://github.com/aws/amazon-ecs-agent/blob/master/agent/engine/dependencygraph/graph.go"
+  },
+  {
+    "id": "S38",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_TargetGroupAttribute.html"
+  },
+  {
+    "id": "S39",
+    "status": 200,
+    "url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ecs-taskdefinition-containerdefinition.html"
+  }
+]
